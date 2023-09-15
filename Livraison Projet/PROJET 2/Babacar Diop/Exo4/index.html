@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Exercice 4</title>
+
+    <style>
+       
+}
+
+                    @font-face {
+                        font-family: 'dayrom';
+                        src: url('polices/dayrom.eot');
+                        src: url('polices/dayrom.eot?#iefix') format('embedded-opentype'),
+                             url('polices/dayrom.woff') format('woff'),
+                             url('polices/dayrom.ttf') format('truetype'),
+                             url('polices/dayrom.svg#dayrom') format('svg');
+                        font-weight: normal;
+                        font-style: normal;
+                    }
+
+                    /* Rêgle général du site */
+                    body {
+                        background-image: url('img/fond_jaune.png');
+                        font-family: 'Trebuchet Ms', arial, sans-serif,; ;
+                        font-size: 1em ;
+                        color: #181818 ;
+
+                        }
+
+                    .bloc_page {
+                        width:952px ;
+                        margin: auto ; 
+                        
+                    }
+
+                    @media all and (max-width: 1040px) {
+                        .bloc_page {
+                            width: auto;
+                        }
+
+                        #nav {
+                            width: auto;
+                            text-align: left;
+                        }
+
+                        #nav p {
+                            display: block;
+                            padding-left: 4px;
+                        }
+
+                        #nav p {
+                            font-size: 1.1em;
+                        }
+
+                        #nav p :hover {
+                            border-bottom: 0;
+                        }
+                    }
+
+                    h1, #nav p {
+                        font-family: 'dayrom',serif;
+                        font-weight: normal;
+                        text-transform: uppercase;
+                    } 
+
+                    /* Header */
+
+                    .separateur {
+                        background: url('img/separateur.png') repeat-x bottom;
+                    }
+
+                    #header, .titre_principal, .logo_z, .Zozor, #nav {
+                        display: inline-block;
+                    }
+
+                    .logo_z, .Zozor{
+                        margin-bottom: 0;
+                    }
+
+                    .Zozor {
+                        font-family: 'ballparkweiner', serif;
+                        font-weight: normal;
+                        font-size: 2.5em;
+                        text-transform: none;
+                        display: inline-block;
+                    }
+                    .carnet_de_voyage {
+                        font-family: 'dayrom', 'Trebuchet Ms' sans-serif;
+                        font-size: 1.1em;
+                        font-weight: normal;
+                        margin-top: 0;
+
+                    }
+                    .red{
+                        color: red;
+                        text-decoration: u;
+                    }
+
+                    .menu{
+                        text-align: right;
+                        width: 740px;
+                    }
+
+                    p {
+                        display: inline-block;
+                        margin-right: 15px;
+                        font-family: 'dayrom';
+                        font-size: 1.3em;
+                        color: #181818;
+                    }
+
+                    /* fin du header */
+
+                    /* Bannière images */
+
+                    .banniere_immages{
+                        background: url('img/sanfrancisco.jpg') no-repeat;
+                        position: relative;
+                        width: 900px;
+                        height: 219px;
+                        border-radius: 10px;
+                        box-shadow: 0 6px 6px #1c1a19;
+                        margin-bottom: 30px;
+                        margin-top: 10px;
+                    }
+
+                    .banniere_description {
+                        position: absolute;
+                        bottom: 0;
+                        border-radius: 0 0 10px 10px;
+                        width: 99.5%;
+                        padding-left: 5px;
+                        padding-top: 5px;
+                        background-color: rgb(24,24,24);
+                        background-color: rgba(24,24,24,0.8);
+                        color: white;
+                        font-size: 0.8em;
+                    }
+
+                    .Bouton_rouge {
+                        display: inline-block;
+                        height: 25px;
+                        position: absolute;
+                        right: 4px;
+                        bottom: 4px;
+                        background: url('img/fond_degraderouge.png') repeat-x;
+                        border: 1px solid #76001;
+                        border-radius: 5px;
+                        font-size: 1.2em;
+                        text-align: center;
+                        padding: 3px 6px 0 6px;
+                        color: white;
+                        text-decoration: none;
+                    }
+
+                    .bouton_rouge img {
+                        border: 0;
+
+                    }
+                    /* fin banière images */
+
+                    /* Début du centre section et aside */
+
+                    #section {
+                        box-sizing: border-box;
+                        display: inline-block;
+                        width: 900px;
+                    }
+
+                    #article {
+                        position: relative;
+                        box-sizing: border-box;
+                        display: inline-block;
+                        width: 620px;
+                        margin: 0; 
+                        padding: 0;
+                        text-align: Justify;
+                        vertical-align: top;
+                    }
+
+                    #aside {
+                        box-sizing: border-box;
+                        width: 260px;
+                        padding: 10px;
+                        margin-left: 15px;
+                        border-radius: 5px;
+                        box-shadow: 0 2px 5px #1c1a19;
+                        display: inline-block;
+                        color: white;
+                        font-size: 0.9em; 
+                        text-align: justify;
+                        vertical-align: top;
+                        background-color: #706b64;
+                    }
+
+                    .apropos {
+                        text-align: center;
+                        margin-bottom: 0;
+                    }
+
+                    .fleche {
+                        position: relative;
+                        right: 22px;
+                        top: 45px;
+                    }
+
+                    .cont_photozozor{
+                        text-align: center;
+                        margin-top: 0;
+                    }
+
+                    .photo_zozor {
+                        border: solid black 1px;
+                    }
+
+                    /* Fin de la section centrale contenant les aside et article */
+
+                    /* Début du footer */
+
+                    .tweet, .mes_photos, .mes_amis {  
+                        display: inline-block;
+                        vertical-align: top;
+                    }
+
+                    .mes_amis {
+                        list-style-image: url('img/ico_liensexterne.png');
+                        width: 29%;
+                    }
+
+                    .mes_amis p {
+                        display: inline-block;
+                        margin-top: 0;
+                        width: 48%;
+                        padding-left: 2px;
+                    }
+
+                    .tweet {
+                        width: 28%;
+                    }
+
+                    .mes_photos {
+                        width: 35%;
+                    }
+
+                    .h1{
+                        font-size: 1.1em;
+                    }
+
+                    #footer .mes_amis a {
+                        color: #760001;
+                        text-decoration: none;
+                    }
+
+                    #footer p, footer ul {
+                        font-size: 0.8em;
+                    }
+                    #footer {
+                        padding-top: 20px;
+                        background: url('img/separateur.png') repeat-x top;
+                    }
+
+                    .ancre {
+                        position: relative;
+                        top: -20px;
+                        right: -450px;
+                    }
+
+                    .lesphotosdevac {
+                        border: 1px solid #181818;
+                        margin-right: 2px;
+                    }
+
+                    /* Fin du footer */
+
+
+
+    </style>
+
+
+
+
+</head>
+
+<body>
+    <div class="bloc_page">
+         <div id="header">
+                <div class="separateur" id="ancre">
+                    <div class="titre_principal">
+                        <img src="img/zozor_logo.png" alt="logo du site zozor" class="logo_z">
+                        <h1 class="Zozor">Zozor</h1>
+                        <h2 class="carnet_de_voyage">Carnets de voyage</h2>
+                    </div>
+                    <div id="nav"> 
+                        <div class="menu">
+                          <p><span class="red">ACCUEIL</span> BLOG CV CONTACT</p>
+                            
+                        </div>
+                    </div>
+                </div>
+        </div>
+
+        <div class="banniere_immages">
+            <div class="banniere_description">
+            <p>Retour sur mes vacances aux Etats-Unis ... <a href="#" class="Bouton_rouge">Voir l'article <img src="img/flecheblanchedroite.png" alt="fleche blanche"></a></p>
+            </div>
+        </div>
+
+        <div id="section">
+
+            <div id="article">
+                <h1><img src="img/ico_epingle.png" alt="icone epingle">JE SUIS UN GRAND VOYAGEUR</h1>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut id debitis natus iusto, ea doloribus eos excepturi ipsa numquam facere! Temporibus nobis laudantium dolorum ea ullam deserunt iste fugit impedit.
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis unde obcaecati, inventore pariatur quos, error. Quae saepe ipsa quo doloremque cumque assumenda, commodi, aliquid, quibusdam atque nihil deserunt cupiditate expedita.
+                </p>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut id debitis natus iusto, ea doloribus eos excepturi ipsa numquam facere! Temporibus nobis laudantium dolorum ea ullam deserunt iste fugit impedit. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel ab accusantium fugit laborum quos dolor eum, sed, tenetur libero recusandae minima iste consectetur labore optio, ea ducimus aliquid, ex iusto?
+                </p>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut id debitis natus iusto, ea doloribus eos excepturi ipsa numquam facere! Temporibus nobis laudantium dolorum ea ullam deserunt iste fugit impedit. Lorem ipsum Duis laboris consequat in laboris commodo Ut laborum Duis ea officia fugiat deserunt laborum ullamco Ut Excepteur ut nulla dolore labore non do non nostrud aliqua consectetur minim dolore irure ullamco labore cupidatat laboris nisi exercitation quis ad cillum minim ex cillum aliquip aliqua tempor ea ex esse laborum Ut proident eu amet occaecat aute dolor cupidatat minim dolor occaecat non dolor cupidatat fugiat Duis eu adipisicing officia occaecat Ut occaecat voluptate non exercitation nulla minim non ad in proident sint labore labore nostrud ut mollit do fugiat et anim in esse ea et aliqua ullamco est deserunt elit labore labore nulla id dolore veniam laboris magna Excepteur non Excepteur tempor commodo qui et non sunt aliqua qui Ut velit sed in ut sint esse commodo dolore ex aute aliqua in aute reprehenderit sunt ullamco ad nostrud ut ex magna proident aliquip consectetur ut dolor consequat et ut laborum ut labore ullamco aute voluptate exercitation laboris laboris deserunt laboris nulla quis fugiat Excepteur voluptate quis pariatur consectetur consequat cupidatat est exercitation adipisicing adipisicing eu in amet in fugiat do in minim ut commodo culpa ullamco enim proident dolor Duis do exercitation eiusmod occaecat ullamco elit elit ut exercitation cupidatat nulla tempor sed in magna consectetur velit ullamco velit Excepteur eiusmod irure sit commodo in eu veniam nostrud Ut ut quis aliqua dolore ut pariatur ex est Ut dolor cillum do laboris consequat in magna ex dolor nulla velit sit.
+                </p>
+            </div>
+
+            <div id="aside">
+                <h1 class="apropos"> à propos de l'auteur </h1>
+                <img src="img/bulle.png" alt="fleche" class="fleche">
+                <p class="cont_photozozor">
+                <img src="img/zozor_classe.png" alt="image classe de zozor" class="photo_zozor">
+                </p>
+                <p>Laisse moi le temps de me présenter : Je m'appelle Zozor, je suis né le 23 Novembre 2005</p>
+                <p>Bien maigre n'est-ce pas? c'est pourquoi Aujourd'hui, j'ai décidé d'écrire ma biographie (ou zBiographie, comme vous voulez) afin que les zéros sachent enfin qui je suis réellement.</p>
+                <img src="img/facebook.png" alt="logo de facebook">
+                <img src="img/twitter.png" alt="logo de twitter">
+                <img src="img/vimeo.png" alt="logo de vimeo">
+                <img src="img/flickr.png" alt="logo de flickr">
+                <img src="img/rss.png" alt="logo de rss">
+            </div>
+
+        </div>
+
+        <div id="footer">
+
+            <a href="#ancre"> <img src="img/ico_top.png" alt="icone d'ancre" class="ancre"></a>
+
+            <div class="tweet">
+                <h1 class="h1"> Mon dernier twwet</h1>
+                <p>Hii haaaan!</p>
+                <p>le 12 mai à 23h12</p>
+            </div>
+
+            <div class="mes_photos">
+                <h1 class="h1">Mes photos</h1>
+                    <img src="img/photo1.jpg" alt="photo de vaccance" class="lesphotosdevac" >
+                    <img src="img/photo2.jpg" alt="photo de vaccance" class="lesphotosdevac" >
+                    <img src="img/photo3.jpg" alt="photo de vaccance" class="lesphotosdevac" >
+                    <img src="img/photo4.jpg" alt="photo de vaccance" class="lesphotosdevac" >
+            </div>
+
+            <div class="mes_amis">
+                <div>
+                    <div><p>pupi le lapin</p></div>
+                    <div><p>Mr Baobab</p></div>
+                    <div><p>Kaiwaii</p></div>
+                    <div><p>perceval.eu</p></div>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+</body>
+
+</html>

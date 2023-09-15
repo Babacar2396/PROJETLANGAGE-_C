@@ -1,0 +1,35 @@
+label{
+	width: 30px;
+    border-radius: 12px;
+    font-weight: bold;
+    font-size: 30px;
+    margin-left: 5rem;
+}
+input{
+	padding: 16px;
+	border-radius: 10px;
+	margin: 15px;
+	background-color: green;
+}
+fieldset{
+	border-radius: 40px;
+	width: 50px;
+
+}
+body{
+	margin-left: 15rem;
+}
+.submit{
+	background-color: red;
+	color: white;
+	font-weight: bold;
+	margin-left: 5rem;
+	font-size: 15px;
+	text-transform: uppercase;
+
+}
+legend{
+	font-size: 20px;
+	font-weight: bold;
+	text-align: center;
+}
